@@ -47,6 +47,10 @@ export abstract class BaseCacheObject<T extends BaseCacheOptions> {
     if (!this.options.ttl) {
       this.options.ttl = options.ttl;
     }
+
+    if (!this.options.noCachePromiseRejects) {
+      this.options.noCachePromiseRejects = options.noCachePromiseRejects;
+    }
   }
 
   public isExpired(args: string): boolean {

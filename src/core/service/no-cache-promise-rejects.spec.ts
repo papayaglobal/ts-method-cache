@@ -40,19 +40,19 @@ class Target {
         throw err();
     }
 
-    @MemoryCache({ noCachePromiseRejects: true })
+    @MemoryCache({ cacheUntilRejected: true })
     public async asyncNonThrowingNoCacheMethod(): Promise<string> {
         this.asyncNonThrowingNoCacheCalled++;
         return returnValue;
     }
 
-    @MemoryCache({ noCachePromiseRejects: true })
+    @MemoryCache({ cacheUntilRejected: true })
     public async asyncThrowingNoCacheMethod(): Promise<string> {
         this.asyncThrowingNoCacheCalled++;
         throw err();
     }
 
-    @MemoryCache({ noCachePromiseRejects: true })
+    @MemoryCache({ cacheUntilRejected: true })
     public nonImmediateAsyncThrowingNoCacheMethod(): Promise<string> {
         this.nonImmediateAsyncThrowingNoCacheCalled++;
         return new Promise((resolve, reject) => this.rejects.push(reject));

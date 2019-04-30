@@ -32,7 +32,7 @@ export function createCacheDecorator(type: CacheType, target: Object, method: Fu
 
       const isPromise = !!res && "function" === typeof res.then;
 
-      if (isPromise && options.noCachePromiseRejects) {
+      if (isPromise && options.cacheUntilRejected) {
         res.catch((e) => cacheObject.clearArgs(argsString));
       }
     }

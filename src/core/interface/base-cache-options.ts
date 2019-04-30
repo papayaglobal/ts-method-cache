@@ -4,5 +4,5 @@ export interface BaseCacheOptions {
   key?: string;
   returnType?: CacheReturnType;
   ttl?: string | number | Date;
-  noCachePromiseRejects?: boolean;
+  cacheUntilRejected?: boolean;
 }

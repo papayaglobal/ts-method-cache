@@ -48,8 +48,8 @@ export abstract class BaseCacheObject<T extends BaseCacheOptions> {
       this.options.ttl = options.ttl;
     }
 
-    if (!this.options.noCachePromiseRejects) {
-      this.options.noCachePromiseRejects = options.noCachePromiseRejects;
+    if (!this.options.cacheUntilRejected) {
+      this.options.cacheUntilRejected = options.cacheUntilRejected;
     }
   }
 

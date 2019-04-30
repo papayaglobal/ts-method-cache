@@ -59,7 +59,7 @@ class Target {
     }
 }
 
-describe("Method cache service can clear cache", () => {
+describe("Method cache clears on promise reject", () => {
     const cacheService: MethodCacheService = new MethodCacheService();
 
     const runMethods = async () => {

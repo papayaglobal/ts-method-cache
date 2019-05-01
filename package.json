@@ -1,49 +1,52 @@
 {
-  "name": "ts-method-cache",
-  "version": "3.2.1",
-  "license": "Apache-2.0",
-  "author": {
-    "name": "Poul Kruijt",
-    "email": "poulkruijt@gmail.com"
-  },
-  "engines": {
-    "node": ">= 5.4.1"
-  },
-  "contributors": [],
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:PierreDuc/ts-method-cache.git"
-  },
-  "homepage": "https://github.com/PierreDuc/ts-method-cache/",
-  "bugs": "https://github.com/PierreDuc/ts-method-cache/issues",
-  "description": "Data method caching logic based on TypeScript decorators",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "test": "karma start"
-  },
-  "types": "dist/index.d.ts",
-  "private": false,
-  "keywords": [
-    "cache",
-    "memory",
-    "typescript",
-    "http",
-    "method",
-    "storage",
-    "session"
-  ],
-  "peerDependencies": {
-    "typescript": ">=2.2.0"
-  },
-  "devDependencies": {
-    "@types/jasmine": "2.8.3",
-    "@types/node": "8.5.2",
-    "jasmine-core": "2.8.0",
-    "karma": "2.0.0",
-    "karma-chrome-launcher": "2.2.0",
-    "karma-jasmine": "1.1.1",
-    "karma-typescript": "3.0.9",
-    "typescript": "2.6.2"
-  }
+    "name": "ts-method-cache",
+    "version": "3.2.1",
+    "license": "Apache-2.0",
+    "author": {
+        "name": "Poul Kruijt",
+        "email": "poulkruijt@gmail.com"
+    },
+    "engines": {
+        "node": ">= 5.4.1"
+    },
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:PierreDuc/ts-method-cache.git"
+    },
+    "homepage": "https://github.com/PierreDuc/ts-method-cache/",
+    "bugs": "https://github.com/PierreDuc/ts-method-cache/issues",
+    "description": "Data method caching logic based on TypeScript decorators",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist/**/*"
+    ],
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "test": "karma start"
+    },
+    "private": false,
+    "keywords": [
+        "cache",
+        "memory",
+        "typescript",
+        "http",
+        "method",
+        "storage",
+        "session"
+    ],
+    "peerDependencies": {
+        "typescript": ">=2.2.0"
+    },
+    "devDependencies": {
+        "@types/jasmine": "2.8.3",
+        "@types/node": "8.5.2",
+        "jasmine-core": "2.8.0",
+        "karma": "2.0.0",
+        "karma-chrome-launcher": "2.2.0",
+        "karma-jasmine": "1.1.1",
+        "karma-typescript": "3.0.9",
+        "typescript": "2.6.2"
+    }
 }
